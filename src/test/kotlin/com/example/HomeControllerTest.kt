@@ -11,6 +11,7 @@ class HomeControllerTest : StringSpec({
     "test book controller" {
         val handler = MicronautLambdaHandler()
         val lambdaContext: Context = MockLambdaContext()
+
         val request = AwsProxyRequest()
         request.httpMethod = "GET"
         request.path = "/"
